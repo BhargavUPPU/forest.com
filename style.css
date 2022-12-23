@@ -1,0 +1,264 @@
+
+*{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size:17px;
+    padding: 7px 13px;
+    border-radius: 3px ;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+
+}
+
+
+body{
+font-family:'Roboto',sans-serif;
+
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width:250px;
+    height: 100%;
+    background: #042331;
+    transition: all 0.5 ease;
+
+
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+
+.sidebar  ul {
+    display: block;
+    height:100%;
+    width:100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing:border-box ;
+    border-top: 1px solid rgba(255,255,255, 0.1);
+    border-bottom: 1px solid  black;
+    transition: .4s;
+
+}
+.sidebar ul li a{
+    color: white;
+    font-size:17px;
+    padding: 7px 13px;
+    border-radius: 3px ;
+    text-transform: uppercase;
+
+}
+.sidebar ul li:hover a{
+    padding-left: 40px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+
+}
+label #btn ,label #cancel{
+      position: absolute;
+      cursor: pointer;
+      background: #042331;
+      border-radius: 3px;
+}
+label #btn{
+    left: 30px;
+    top:10px;
+    font-size: 35px;
+    color:white;
+    padding: 6px 12px;
+    transition: all 0.5 ;
+}
+label #cancel{
+    z-index: 1111;
+    left:-195px;
+    top:17px;
+    font-size:30px;
+    color: #0a5275;
+    padding:4px 9px;
+    transition: all .5 ease;
+}
+#check:checked ~  .sidebar{
+
+left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+       
+}
+.maincontent{
+    background-image: url(./pexels-arnav-kainthola-6352761.jpg);
+    height: 500PX;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.test{
+   
+    position: relative;
+    
+    top: 6%;
+    left: 20%;
+    width: 200px;
+    word-break:keep-all;
+    color:white;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2em;  
+    justify-items:stretch;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.box1{
+  
+    grid-column: 1/2;
+    grid-row:1/3;
+    border: 1px solid #333;
+   background-image: url(./pexels-johannes-plenio-2566850.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height: 600px;
+   color: white;
+}
+.box2{
+    background-image: url(./pexels-karolina-grabowska-5840711.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height: 300px;
+   color:black;
+    border: 1px solid #333;
+}
+.box3{
+    background-image: url(./pexels-frans-van-heerden-682078.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    color: white;
+    border: 1px solid #333;
+}
+video{
+    cursor: pointer;
+   position: relative;
+   top:40px;
+   left: 400px;
+   
+}
+.content2{
+    padding: 100px;
+    
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+}
+
+.main{
+    max-width: 1000px;
+  margin: auto;
+}
+
+.row{
+    margin: 8px -16px;
+    padding-left: 100px;
+}
+.row > .column{
+    padding: 10px;
+}
+.column{
+    
+    float: left;
+    width: 25%;
+   
+}
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color:black;
+    color: white;
+
+    padding:10px;
+}
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      
+    }
+  }
+  .footer >.img{
+    size: 100% 100%;
+    
+    
+  }
